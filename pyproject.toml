@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "dft-toolkit"
+version = "0.1.0"
+description = ""
+authors = ["Vladimir Dikan <vdikan@vivaldi.net>"]
+readme = "README.md"
+packages = [{include = "dft_toolkit"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+plumbum = "^1.8.2"
+ase = "^3.22.1"
+
+[tool.poetry.scripts]
+dfttk-poscar-to-fdf = "cli.dfttk_poscar_to_fdf:main"
+dfttk-struct-out-to-poscar = "cli.dfttk_struct_out_to_poscar:main"
+
+[project.scripts]
+dfttk-poscar-to-fdf = "cli.dfttk_poscar_to_fdf:main"
+dfttk-struct-out-to-poscar = "cli.dfttk_struct_out_to_poscar:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
