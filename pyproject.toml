@@ -16,11 +16,13 @@ mp-api = "^0.39.5"
 dfttk-poscar-to-fdf = "cli.dfttk_poscar_to_fdf:main"
 dfttk-struct-out-to-poscar = "cli.dfttk_struct_out_to_poscar:main"
 dfttk-mp-download = "cli.dfttk_mp_download:main"
+dfttk-eos = "cli.dfttk_eos:main"
 
 [project.scripts]
 dfttk-poscar-to-fdf = "cli.dfttk_poscar_to_fdf:main"
 dfttk-struct-out-to-poscar = "cli.dfttk_struct_out_to_poscar:main"
 dfttk-mp-download = "cli.dfttk_mp_download:main"
+dfttk-eos = "cli.dfttk_eos:main"
 
 [build-system]
 requires = ["poetry-core"]
