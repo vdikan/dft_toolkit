@@ -10,14 +10,17 @@ packages = [{include = "dft_toolkit"}]
 python = "^3.10"
 plumbum = "^1.8.2"
 ase = "^3.22.1"
+mp-api = "^0.39.5"
 
 [tool.poetry.scripts]
 dfttk-poscar-to-fdf = "cli.dfttk_poscar_to_fdf:main"
 dfttk-struct-out-to-poscar = "cli.dfttk_struct_out_to_poscar:main"
+dfttk-mp-download = "cli.dfttk_mp_download:main"
 
 [project.scripts]
 dfttk-poscar-to-fdf = "cli.dfttk_poscar_to_fdf:main"
 dfttk-struct-out-to-poscar = "cli.dfttk_struct_out_to_poscar:main"
+dfttk-mp-download = "cli.dfttk_mp_download:main"
 
 [build-system]
 requires = ["poetry-core"]
